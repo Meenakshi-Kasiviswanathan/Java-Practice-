@@ -1,0 +1,135 @@
+*/
+
+// second largest and smallest 
+
+
+// public class kthsmallest{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n= 5;
+//         int[] arr = {12, 34, 54 ,14,23};
+//         System.out.println(Arrays.toString(arr));
+//         int seclarge= large(arr, n);
+//         System.out.println(seclarge);
+//         int secsmall = small(arr,n);
+//         System.out.println(secsmall);
+//     }
+//     static int large(int[] a,int n){
+//         int lar = a[0];
+//         int slar = -1;
+
+//         for(int i=0;i<n;i++){
+//             if(a[i] > lar){
+//                 slar = lar;
+//                 lar = a[i];
+//             }
+//             else if(a[i]< lar && a[i] > slar){
+//                 slar = a[i];
+//             }
+//             }
+//             return slar;
+//         }
+
+//     static int small(int[] arr , int n){
+//         int sma = arr[0];
+//         int ssma = Arrays.stream(arr).max().getAsInt();
+
+//         for(int i=0;i<n;i++){
+//             if(arr[i] < sma){
+//                 ssma = sma;
+//                 sma = arr[i];
+//             }
+//             else if (arr[i] > sma && arr[i] <ssma){
+//                 ssma = arr[i];
+//             }
+//         }
+
+//         return ssma;
+
+//     }
+
+//     }
+
+
+// to find max and min in single line code
+
+// public class kthsmallest{
+//     public static void main(String[] args) {
+//         int[] arr = {1,4,3,87,56,43};
+//         System.out.println(Arrays.toString(arr));
+//         int max = Arrays.stream(arr).max().getAsInt();
+//         System.out.println(max);
+//         int min = Arrays.stream(arr).min().getAsInt();
+//         System.out.println(min);
+
+//     }
+// }
+
+
+// to find the array is sorted or not
+
+// public class kthsmallest{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int[] arr = new int[n];
+//         for(int i=0;i<n;i++){
+//             arr[i] = sc.nextInt();
+//         }
+
+//         System.out.println(Arrays.toString(arr));
+
+//         boolean check = sortt(arr,n);
+        
+//         if(check == true){
+//             System.out.println("The array is sorted");
+//         }
+//         else{
+//             System.out.println("Unsorted array");
+//      }
+// }
+
+//     static boolean sortt(int[] arr, int n){
+//     for(int i= 1;i<n;i++){
+//             if(arr[i] >=  arr[i-1]){
+                
+//             }
+//             else{
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+// }
+
+
+
+// remove the duplicate element
+
+// public class kthsmallest{
+//     public static void main(String[] args) {
+        
+//         int[] arr = {1,3,2,3,2,9,6,5};
+//         int k= removeDup(arr);
+//         System.out.print("Arrays after removing duplicate: ");
+        
+//         for(int i=0;i<k;i++){
+//             System.out.print(arr[i]+" ");
+//         }
+        
+//     }
+
+//     static int removeDup (int[] a){
+//         HashSet<Integer> set = new HashSet<>();
+//         for(int i=0 ; i<a.length ; i++){
+//             set.add(a[i]);
+//         }
+
+//         int k = set.size();
+//         int j = 0;
+//         for(int x:set){
+//             a[j++] = x;
+//         }
+//        return k;
+//     }
+// }
